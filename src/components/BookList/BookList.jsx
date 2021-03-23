@@ -17,8 +17,7 @@ const BookList = (props) => {
   //изменяем книгу
   const changeBook = (e) => {
     e.preventDefault();
-
-    if (title === "" && name === "") {
+    if ((title === "" && name === "") || !title || !name) {
       setWarning(true);
     } else {
       const bookItem = { name, title };
@@ -30,6 +29,7 @@ const BookList = (props) => {
     }
   };
 
+  //открываем форму
   const openFormHandler = (id, object) => {
     setChange(true);
     setName(object.name);
@@ -39,7 +39,6 @@ const BookList = (props) => {
 
   let itemList = Object.keys(localStorage).map((key) => {
     let object = JSON.parse(localStorage.getItem(key));
-
     return (
       <li key={key}>
         <p>
@@ -63,7 +62,6 @@ const BookList = (props) => {
       </div>
     );
   }
-  console.log(itemList);
 
   const errorMessage = warning ? <p>Заполните оба поля</p> : null;
 
@@ -86,7 +84,7 @@ const BookList = (props) => {
         onChange={(e) => setTitle(e.target.value)}
       />
       <button className={classes.form__button} onClick={(e) => changeBook(e)}>
-        Изменить
+        Сохранить изменения
       </button>
       {errorMessage}
     </form>

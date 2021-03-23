@@ -9,7 +9,6 @@ function App() {
   return (
     <div className="App">
       {book && <BookList book={book} setBook={setBook} />}
-
       < AddBook setBook={setBook}/>
 
     </div>

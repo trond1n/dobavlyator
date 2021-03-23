@@ -18,14 +18,13 @@ const AddBook = (props) => {
   const addBookToStorage = (e) => {
     e.preventDefault();
 
-    if (title === "" && name === "") {
+    if ((title === "" && name === "") || !title || !name) {
       setWarning(true);
     } else {
       const index = Math.floor(Math.random() * 100000);
       let object = Object.keys(localStorage).map((key) =>
         JSON.parse(localStorage.getItem(key))
       );
-      console.log(object);
       props.setBook(object);
       const bookItem = { name, title };
       localStorage.setItem(index, JSON.stringify(bookItem));
@@ -35,7 +34,6 @@ const AddBook = (props) => {
       setWarning(false);
     }
   };
-  //обновляем форму
 
   const errorMessage = warning ? <p>Заполните оба поля</p> : null;
   const button = send ? (
@@ -53,6 +51,7 @@ const AddBook = (props) => {
       Добавить
     </button>
   );
+
   return (
     <div className={classes.AddBook}>
       <h1>Добавить книгу</h1>
