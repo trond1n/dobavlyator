@@ -2,7 +2,7 @@
   "name": "jet-style",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://trond1n.github.io/dobavlyator/",
+  "homepage": "https://trond1n.github.io/dobavlyator/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
@@ -19,6 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
