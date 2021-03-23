@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/dobavlyator/static/css/main.181208eb.chunk.css",
-    "main.js": "/dobavlyator/static/js/main.2ea73152.chunk.js",
-    "main.js.map": "/dobavlyator/static/js/main.2ea73152.chunk.js.map",
+    "main.css": "/dobavlyator/static/css/main.95d59531.chunk.css",
+    "main.js": "/dobavlyator/static/js/main.ab79fb11.chunk.js",
+    "main.js.map": "/dobavlyator/static/js/main.ab79fb11.chunk.js.map",
     "runtime-main.js": "/dobavlyator/static/js/runtime-main.04532eb5.js",
     "runtime-main.js.map": "/dobavlyator/static/js/runtime-main.04532eb5.js.map",
     "static/js/2.77ebfa34.chunk.js": "/dobavlyator/static/js/2.77ebfa34.chunk.js",
     "static/js/2.77ebfa34.chunk.js.map": "/dobavlyator/static/js/2.77ebfa34.chunk.js.map",
     "index.html": "/dobavlyator/index.html",
-    "static/css/main.181208eb.chunk.css.map": "/dobavlyator/static/css/main.181208eb.chunk.css.map",
+    "static/css/main.95d59531.chunk.css.map": "/dobavlyator/static/css/main.95d59531.chunk.css.map",
     "static/js/2.77ebfa34.chunk.js.LICENSE.txt": "/dobavlyator/static/js/2.77ebfa34.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.04532eb5.js",
     "static/js/2.77ebfa34.chunk.js",
-    "static/css/main.181208eb.chunk.css",
-    "static/js/main.2ea73152.chunk.js"
+    "static/css/main.95d59531.chunk.css",
+    "static/js/main.ab79fb11.chunk.js"
   ]
 }
